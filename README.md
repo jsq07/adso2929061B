@@ -4,7 +4,7 @@
 
 ### Centro de Procesos Industriales y construcciòn
 
-#### Maria José Guarin
+#### Juan José Sánchez Quiceno
 
 ---
 
