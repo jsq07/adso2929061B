@@ -4,6 +4,8 @@
 
 ### Centro de Procesos Industriales y construcciòn
 
+#### Juan José Sánchez Quiceno 
+
 ---
 
 ![Inosuke](https://tinyurl.com/bdejh52z)
