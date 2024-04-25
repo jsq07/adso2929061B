@@ -6,8 +6,8 @@
 
 ---
 
-![Rick Sanchez](https://tinyurl.com/2p9w4dpc)
+![Rick Sanchez](https://tinyurl.com/yep6mywk)
 
-[ADSO Files DRIVE](https://tinyurl.com/yep6mywk)
+[ADSO Files DRIVE](https://tinyurl.com/wnkk334u)
 
  
