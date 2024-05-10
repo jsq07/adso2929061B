@@ -91,7 +91,7 @@ body {
                     border-radius: 50px;
                     background-color: var(--color-2);
                     color: var(--color-1);
-                    font-size: 1.4rem;
+                    font-size: 2rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -115,6 +115,7 @@ body {
             img {
                 border-radius: 50%;
                 border: 8px solid #c95a1e;
+                outline: 3px solid #ffffff;
                 height: 200px;
                 object-fit: cover;
                 width: 200px;
