@@ -1,6 +1,11 @@
-/*- - - - - - - -*/
-/*01 - RESET*/
-/*- - - - - - - -*/
+/* - - - - - - - - - - - - - - */
+/* F O N T S */
+/* - - - - - - - - - - - - - - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* - - - - - - - - - - - - - - */
+/* R E S E T */
+/* - - - - - - - - - - - - - - */
 *,
 *::before,
 *::after {
@@ -67,29 +72,25 @@ html {
     scroll-behavior: smooth;
 }
 
-/*- - - - - - - -*/
-/*02 - FONTS*/
-/*- - - - - - - -*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
-/*- - - - - - - -*/
-/*03 - VARIABLES*/
-/*- - - - - - - -*/
+/* - - - - - - - - - - - - - - */
+/* V A R I A B L E S */
+/* - - - - - - - - - - - - - - */
 :root {
     --color-1: #fff9;
     --color-2: #0009;
     --font-bd: 'Poppins', sans-serif;
 }
 
-/*- - - - - - - -*/
-/*04 - GENERAL*/
-/*- - - - - - - -*/
+/* - - - - - - - - - - - - - - */
+/* G E N E R A L */
+/* - - - - - - - - - - - - - - */
 body {
-    font-family: var(--font-bd);
+    align-items: center;
     color: var(--color-2);
     display: flex;
+    font-family: var(--font-bd);
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     min-height: 100vh;
 
     nav {
@@ -121,12 +122,11 @@ body {
 
     main {
         header {
+            align-items: center;
             display: flex;
             justify-content: center;
-            align-items: center;
-            flex-direction: column;
             gap: 0.6rem;
-
+            flex-direction: column;
 
             h1 {
                 font-size: 3rem;
@@ -140,20 +140,17 @@ body {
                     background-color: var(--color-2);
                     color: var(--color-1);
                     font-size: 2rem;
-                    text-align: center;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     height: 50px;
                     width: 50px;
-
                 }
             }
 
             h2 {
                 font-size: 1.4rem;
                 font-weight: 600;
-
             }
 
             h3 {
@@ -166,66 +163,89 @@ body {
             }
 
             p {
-                color: #ffff;
+                color: #fff9;
                 margin: 0 auto;
                 width: 80%;
-                text-align: center;
             }
 
             img {
                 border-radius: 50%;
                 border: 10px solid var(--color-2);
-                width: 200px;
                 height: 200px;
                 object-fit: cover;
+                width: 200px;
             }
         }
-    }
 
-    menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 2rem;
-        justify-content: center;
-        gap: 1rem;
+        section {
+            padding: 1rem;
 
-        a:is(:link, :visited) {
-            border-radius: 50px;
-            background: linear-gradient(to right, #fffc, #fff3);
-            color: var(--color-2);
+            h3 {
+                border-bottom: 2px dotted var(--color-2);
+                margin-block: 0.6rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+                margin-bottom: 0.6rem;
+            }
+
+            xmp {
+                color: #43fa43;
+                margin-top: 0.6rem;
+                border-radius: 5px;
+                padding: 0 0.8rem 0.8rem;
+                background-color: #0006;
+            }
+        }
+
+        menu {
             display: flex;
-            padding: 0.6rem;
-            text-decoration: none;
-            transition: all 0.4s ease-in;
-            gap: 0.6rem;
-            width: 240px;
+            flex-direction: column;
             align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            justify-content: center;
+            gap: 0.6rem;
 
-            span {
-                border-radius: 20px;
-                background-color: var(--color-2);
-                color: var(--color-1);
-                font-weight: 600;
-                height: 28px;
+            a:is(:link, :visited) {
+                border-radius: 50px;
+                background: linear-gradient(to right, #fffc, #fff3);
+                color: var(--color-2);
                 display: flex;
                 align-items: center;
-                justify-content: center;
-                width: 28px;
+                padding: 0.6rem;
+                text-decoration: none;
+                transition: all 0.4s ease-in;
+                gap: 0.6rem;
+                width: 240px;
+
+                span {
+                    border-radius: 20px;
+                    background-color: var(--color-2);
+                    color: #fff;
+                    font-weight: 600;
+                    height: 28px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 28px;
+                }
+            }
+
+            a:is(:hover) {
+                background: linear-gradient(to right, #fffe, #fff6);
+                transform: scale(1.05) translateY(-4px);
             }
         }
 
-        a:is(:hover) {
-            background-color: #fffc;
-            transform: scale(1.05) translateX(-4px);
+        section {
+            background-color: var(--color-1);
+            border-radius: 4px;
+            margin-block: 1rem;
+            min-height: 25vh;
+            width: 400px;
         }
-    }
-    section {
-        background-color: var(--color-1);
-        border-radius: 4px;
-        margin-block: 1rem;
-        min-height: 25vh;
-        width: 400px;
     }
 }
 
