@@ -4,8 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>07 Inheritance</title>
+    <title>07- Inheritance</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        ul {
+            color: indigo;
+            padding-left: 1rem;
+        }
+        ol {
+            padding-left: 2rem;
+        }
+        ul li ol li:last-child {
+            color: crimson;
+        }
+    </style>
 </head>
 
 <body class="css">
@@ -21,13 +33,26 @@
     </nav>
     <main>
         <header>
-            <h1><span>07</span>Inheritance</h1>
+            <h1>07- Inheritance</h1>
             <p>
-                Lorem
+                Property is inherited from the father to all his descendants.
             </p>
         </header>
         <section>
-
+            <ul>
+                <li>Metroid Dread</li>
+                <li>Ori and Blind Forest</li>
+                <li>Hollow Knight</li>
+                <li>Prince of Persia The Lost Crown</li>
+                <li class="cambiar_color">
+                    Zelda Tears of the Kingdom
+                    <ol>
+                        <li>Zelda</li>
+                        <li>Link</li>
+                        <li>Ganondorf</li>
+                    </ol>
+                </li>
+            </ul>
         </section>
     </main>
 </body>
