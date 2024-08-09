@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>24 - Challenge</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
         body {
             background-color: #17a053;
         }
@@ -32,7 +33,7 @@
             padding: 1rem;
             justify-content: center;
             align-items: center;
-            width: 150px;
+            width: 8.25%;
             text-decoration: none;
             color: white;
             display: flex;
@@ -42,7 +43,9 @@
             color: #ffffff;
             background-color: #000000;
             transform: scale(1.1);
+            transition: all 0.3s ease-in;
         }
+
         section {
             background-color: #0b6331;
             align-items: center;
@@ -53,6 +56,7 @@
             display: flex;
             padding: 0;
         }
+
         section figure {
             background: url(../imagenes/spriteweb.png);
             background-position: 328px -7px;
@@ -73,29 +77,179 @@
             width: 300px;
         }
 
+        section.contenedor {
+            border: 10px solid #006423;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            display: flex;
+            margin-inline: auto;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            width: 52%;
+            height: auto;
 
+            div.cont {
+                display: flex;
+                margin-inline: auto;
+                padding: auto;
+                align-items: center;
+                justify-content: center;
 
+                aside.logo2 {
+                    background: url(../imagenes/spriteweb.png);
+                    background-position: -295px 100px;
+                    width: 180px;
+                    height: 90px;
+                    margin-inline: auto;
+                    margin: 3rem;
+                    transition: transform 0.5s ease;
+                    transform-style: preserve-3d;
+                    perspective: 100px;
+                }
+
+                aside.logo2:hover {
+                    transform: rotateY(360deg);
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 1rem;
+                    width: 120%;
+                    line-height: 2;
+                    color: rgb(41, 39, 39);
+                    transition: all 0.2s ease-in-out;
+                    cursor: pointer;
+                }
+
+                p:hover {
+                    color: #059337;
+                }
+
+                aside.logo3 {
+                    background: url(../imagenes/spriteweb.png);
+                    background-position: -83px -205px;
+                    width: 230px;
+                    height: 170px;
+                    margin-inline: auto;
+                    margin: 3rem;
+                }
+            }
+
+            div.cont {
+                border: 10px solid #006423;
+            }
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-inline: auto;
+            width: 53%;
+            height: auto;
+            background-color: #ffffff;
+
+            div.logoFooter {
+                margin-inline: auto;
+                background: url(../imagenes/spriteweb.png);
+                background-position: -500px -420px;
+                width: 265px;
+                height: 185px;
+            }
+
+            menu {
+                display: flex;
+                margin-inline: auto;
+                align-items: center;
+                justify-content: center;
+                gap: 1.5rem;
+                cursor: pointer;
+                width: 95%;
+
+                a:is(:link, :visited) {
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 1rem;
+                    background-color: #ffffff;
+                    border-bottom: 10px solid #17a053;
+                    padding: 1rem;
+                    width: 100%;
+                    color: black;
+                    
+
+                }
+
+                a:is(:hover),
+                a.active {
+                    color: #17a053;
+                    background-color: #000000;
+                    transform: scale(1.1);
+                    transition: all 0.3s ease-in;
+                }
+            }
+        }
     </style>
 </head>
 
 <body class="css">
     <main>
         <header>
-        <div class="logo"></div>
-        <menu>
-            <a href="">INICIO</a>
-            <a href="">NOSOTROS</a>
-            <a href="">PORTAFOLIO</a>
-            <a href="">SERVICIOS</a>
-            <a href="">CONTACTO</a>
-        </menu>
-    </header>
-    <section>
-        <figure><span class="text">Sprite 1</span></figure>
-        <figure><span class="text">Sprite 2</span></figure>
-        <figure><span class="text">Sprite 3</span></figure>
-    </section>
-        
+            <div class="logo"></div>
+            <menu>
+                <a href="">INICIO</a>
+                <a href="">NOSOTROS</a>
+                <a href="">PORTAFOLIO</a>
+                <a href="">SERVICIOS</a>
+                <a href="">CONTACTO</a>
+            </menu>
+        </header>
+        <section>
+            <figure><span class="text">Sprite 1</span></figure>
+            <figure><span class="text">Sprite 2</span></figure>
+            <figure><span class="text">Sprite 3</span></figure>
+        </section>
+        <br>
+        <section class="contenedor">
+            <div class="cont linea1">
+                <aside class="logo2"></aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa autem reiciendis maxime asperiores
+                    ratione adipisci rerum quisquam rem, enim molestiae debitis inventore delectus voluptates explicabo
+                    quasi iste eius veniam atque. Quae, reiciendis at officia rem architecto in reprehenderit
+                    consectetur distinctio perferendis suscipit iure laudantium quam assumenda numquam ea voluptatum!
+                </p>
+                <aside class="logo3"></aside>
+            </div>
+            <div class="cont">
+                <aside class="logo2"></aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa autem reiciendis maxime asperiores
+                    ratione adipisci rerum quisquam rem, enim molestiae debitis inventore delectus voluptates explicabo
+                    quasi iste eius veniam atque. Quae, reiciendis at officia rem architecto in reprehenderit
+                    consectetur distinctio perferendis suscipit iure laudantium quam assumenda numquam ea voluptatum!
+                </p>
+                <aside class="logo3"></aside>
+            </div>
+            <div class="cont linea2">
+                <aside class="logo2"></aside>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa autem reiciendis maxime asperiores
+                    ratione adipisci rerum quisquam rem, enim molestiae debitis inventore delectus voluptates explicabo
+                    quasi iste eius veniam atque. Quae, reiciendis at officia rem architecto in reprehenderit
+                    consectetur distinctio perferendis suscipit iure laudantium quam assumenda numquam ea voluptatum!
+                </p>
+                <aside class="logo3"></aside>
+            </div>
+        </section>
+        <footer>
+            <div class="logoFooter"></div>
+            <menu>
+                <a href="">INICIO</a>
+                <a href="">NOSOTROS</a>
+                <a href="">PORTAFOLIO</a>
+                <a href="">SERVICIOS</a>
+                <a href="">CONTACTO</a>
+            </menu>
+        </footer>
+
     </main>
 </body>
 
