@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design (Media Queries)</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
+
+        * {
+            transition: all 0.2s ease-in;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        main header figure.logo {
+            background: url(../imagenes/demonslayertitle.png) no-repeat center;
+            background-size: 70%;
+            object-fit: cover;
+            margin: 0 auto;
+            width: 919px;
+            height: 354px;
+        }
+
+        main p {
+            line-height: 2rem;
+            text-align: justify;
+        }
+
+        main h1 {
+            font-size: 4rem;
+            text-align: center;
+        }
+
+        main h1 span.small,
+        main h1 span.medium {
+            display: none;
+        }
+
+        /* - - - - - - - - - - - - - - - */
+        /* M E D I A   Q U E R I E S */
+        /* - - - - - - - - - - - - - - - */
+        @media (max-width: 1024px) {
+            main header figure.logo {
+                background: url(../imagenes/demonslayertitle.png) no-repeat center;
+                background-size: 100%;
+                object-fit: cover;
+                width: 348px;
+                height: 370px;
+            }
+
+            main h1 span.small,
+            main h1 span.large {
+                display: none;
+            }
+
+            main h1 span.medium {
+                display: inline;
+            }
+
+            main h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        div.row {
+            margin: 30px auto;
+            width: 90%;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            background-color: #fff1;
+            color: #ffff;
+            /*border: 0.6rem solid #fff;*/
+        }
+
+        div.row div.title {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            font-size: 1.5rem;
+            transition: background-color 0.5s;
+        }
+
+        div.row div.title {
+            display: flex;
+            background-color: rgb(0, 0, 0);
+            justify-content: center;
+            align-items: center;
+            height: 2rem;
+            font-size: 1.5rem;
+            transition: background-color 0.5s, transform 0.3s ease;
+            /* Transición suave para el movimiento */
+        }
+
+        div.row div.title:hover {
+            animation: backgroundChange 3s infinite;
+            transform: translateY(-10px);
+            /* Se levanta 10px al pasar el cursor */
+        }
+
+        @keyframes backgroundChange {
+            0% {
+                background-color: rgb(0, 0, 0);
+            }
+
+            50% {
+                background-color: rgb(50, 50, 50);
+            }
+
+            100% {
+                background-color: rgb(0, 0, 0);
+            }
+        }
+
+        div.box1 {
+            background: url(../imagenes/inosukehashibira.png) no-repeat center;
+            background-size: 80%;
+            overflow: hidden;
+            width: 350px;
+            height: 420px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        div.box2 {
+            background: url(../imagenes/tanjiro.png) no-repeat center;
+            background-size: 100%;
+            overflow: hidden;
+            width: 350px;
+            height: 420px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        div.box3 {
+            background: url(../imagenes/rengoku.png) no-repeat center;
+            background-size: 67%;
+            overflow: hidden;
+            width: 350px;
+            height: 420px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        div.box4 {
+            background: url(../imagenes/kanroji.png) no-repeat center;
+            background-size: 100%;
+            overflow: hidden;
+            width: 350px;
+            height: 420px;
+            margin: 1rem auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+
+        }
+        
+        .section2 {
+            color: #fff;
+            width: 90%;
+            margin: auto;
+            height: 240px;
+
+            
+        }
+        .scroll {
+            overflow: scroll;
+            max-width: 60%;
+        }
+
+        div.box5 {
+            background-size: 100%;
+            overflow: hidden;
+            width: 100%;
+            height: 240px;
+            margin: 1rem auto;
+            display: flex;
+            
+        }
+        .img1 {
+            background: url(../imagenes/demonslayer.png) no-repeat center;
+            width: 1000px;
+            height: 500px;
+            background-size: 75%;
+            margin-top: -140px;
+            overflow: hidden;
+            position: relative;
+        }
+        .img2 {
+            background: url(../imagenes/demonslayertitle.png) no-repeat center;
+            width: 1000px;
+            height: 500px;
+            background-size: 75%;
+            margin-top: -140px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <figure class="logo"></figure>
+        </header>
+        <section class="box0">
+            <div class="row">
+                <div class="box1">
+                    <div class="title"><strong>Inosuke Hashibira</strong></div>
+                </div>
+                <div class="box2">
+                    <div class="title"><strong>Tanjiro Kamado</strong></div>
+                </div>
+                <div class="box3">
+                    <div class="title"><strong>Kyōjurō Rengoku</strong></div>
+                </div>
+                <div class="box4">
+                    <div class="title"><strong>Mitsuri Kanroji</strong></div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div>
+                <div class="box5">
+                    <div class="img1"></div>
+                    <p class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi architecto nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque fugiat harum sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt cum incidunt cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta, quia perferendis rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non excepturi ex illum! Architecto iure illum esse porro repellendus voluptate voluptatum minus ea, atque, voluptas velit, nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit quia quo fuga quisquam beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati excepturi at. Dolor veritatis reprehenderit voluptate incidunt enim accusamus iste ipsum sit recusandae sequi beatae, deleniti perspiciatis dolores illum impedit, amet nobis minima laborum ex ut alias! Quisquam nulla, commodi quo cumque molestiae eum soluta esse necessitatibus eligendi officiis distinctio, unde eos omnis. Vitae deserunt quos similique velit ratione quasi dicta quam quis nobis voluptas itaque eius debitis sequi incidunt alias ullam dolor tempore expedita deleniti, delectus numquam ipsa facilis nam! Explicabo possimus ut tempora modi nostrum consectetur autem, dolorum magni? Eligendi, doloremque illum iste id voluptatem commodi cumque blanditiis molestias. Iste aliquid porro perspiciatis voluptatem eum voluptatibus quibusdam deserunt officia aperiam, ut facilis? Commodi unde facilis iste sunt expedita voluptate. Expedita ratione quibusdam nihil placeat provident molestias? Molestiae adipisci alias ratione facere voluptatum libero quidem doloremque ducimus necessitatibus perspiciatis odio quo quas, perferendis ullam error dolor asperiores laboriosam vitae deserunt unde vero voluptate? Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus recusandae explicabo quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid deleniti inventore, beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis illum voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique, odit?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box5">
+                <div class="img2"></div>
+                <p class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi architecto nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque fugiat harum sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt cum incidunt cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta, quia perferendis rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non excepturi ex illum! Architecto iure illum esse porro repellendus voluptate voluptatum minus ea, atque, voluptas velit, nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit quia quo fuga quisquam beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati excepturi at. Dolor veritatis reprehenderit voluptate incidunt enim accusamus iste ipsum sit recusandae sequi beatae, deleniti perspiciatis dolores illum impedit, amet nobis minima laborum ex ut alias! Quisquam nulla, commodi quo cumque molestiae eum soluta esse necessitatibus eligendi officiis distinctio, unde eos omnis. Vitae deserunt quos similique velit ratione quasi dicta quam quis nobis voluptas itaque eius debitis sequi incidunt alias ullam dolor tempore expedita deleniti, delectus numquam ipsa facilis nam! Explicabo possimus ut tempora modi nostrum consectetur autem, dolorum magni? Eligendi, doloremque illum iste id voluptatem commodi cumque blanditiis molestias. Iste aliquid porro perspiciatis voluptatem eum voluptatibus quibusdam deserunt officia aperiam, ut facilis? Commodi unde facilis iste sunt expedita voluptate. Expedita ratione quibusdam nihil placeat provident molestias? Molestiae adipisci alias ratione facere voluptatum libero quidem doloremque ducimus necessitatibus perspiciatis odio quo quas, perferendis ullam error dolor asperiores laboriosam vitae deserunt unde vero voluptate? Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus recusandae explicabo quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid deleniti inventore, beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis illum voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique, odit?</p>
+                </div>
+            </div>
+        </div>
+            </section>
+    </main>
+</body>
+</html>
