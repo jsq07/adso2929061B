@@ -43,6 +43,10 @@
         main h1 span.medium {
             display: none;
         }
+        span {
+            font-size: 2rem;
+            font-weight: bolder;
+        }
 
         /* - - - - - - - - - - - - - - - */
         /* M E D I A   Q U E R I E S */
@@ -88,38 +92,6 @@
             align-items: center;
             height: 2rem;
             font-size: 1.5rem;
-            transition: background-color 0.5s;
-        }
-
-        div.row div.title {
-            display: flex;
-            background-color: rgb(0, 0, 0);
-            justify-content: center;
-            align-items: center;
-            height: 2rem;
-            font-size: 1.5rem;
-            transition: background-color 0.5s, transform 0.3s ease;
-            /* Transición suave para el movimiento */
-        }
-
-        div.row div.title:hover {
-            animation: backgroundChange 3s infinite;
-            transform: translateY(-10px);
-            /* Se levanta 10px al pasar el cursor */
-        }
-
-        @keyframes backgroundChange {
-            0% {
-                background-color: rgb(0, 0, 0);
-            }
-
-            50% {
-                background-color: rgb(50, 50, 50);
-            }
-
-            100% {
-                background-color: rgb(0, 0, 0);
-            }
         }
 
         div.box1 {
@@ -170,48 +142,101 @@
             justify-content: flex-end;
 
         }
-        
+        div.box1:hover .title {
+            height: 60px;
+        }
+        div.box2:hover .title {
+            height: 60px;
+        }
+        div.box3:hover .title {
+            height: 60px;
+        }
+        div.box4:hover .title {
+            height: 60px;
+        }
+
+
         .section2 {
             color: #fff;
             width: 90%;
             margin: auto;
-            height: 240px;
+            /* height: 240px; */
+            height: auto;
+            margin: 5rem;
+            /* border: 10px solid #fff; */
 
-            
+
         }
+
         .scroll {
             overflow: scroll;
             max-width: 60%;
+            overflow-x: hidden;
+            
         }
 
         div.box5 {
             background-size: 100%;
-            overflow: hidden;
+            /* overflow: hidden; */
             width: 100%;
             height: 240px;
             margin: 1rem auto;
             display: flex;
-            
+
         }
+
+
+
         .img1 {
             background: url(../imagenes/demonslayer.png) no-repeat center;
             width: 1000px;
             height: 500px;
-            background-size: 50%;
+            background-size: 40%;
             margin-top: -140px;
             overflow: hidden;
-            position: relative;
+            /* border: 2px solid #ff0000; */
         }
+
         .img2 {
             background: url(../imagenes/NezukoKamado.png) no-repeat center;
             width: 1000px;
             height: 500px;
-            background-size: 30%;
+            background-size: 20%;
             margin-top: -140px;
             overflow: hidden;
-            position: relative;
+            /* border: 2px solid #fff; */
         }
-        
+        @media ( max-width: 950px){
+            .section2{
+                margin: auto;
+                width: 80vw;
+                display: flex;
+                flex-direction: column;
+            }
+            .box5 {
+                display: flex;
+                /* border: 2px solid #00ff26; */
+                flex-direction: column;
+                align-items: center;
+                min-height: 500px;
+            }
+            .img1 {
+                display: block;
+                width: 100%;
+                height: 5000px;
+                margin-top: 0;
+            }
+            .img2{
+                width: 100%;
+                height: 5000px;
+                margin-top: 0;
+            }
+            .scroll{
+                /* border: 2px solid aqua; */
+                min-height: 52%;
+                min-width: 90%;
+            }
+        }
     </style>
 </head>
 
@@ -238,20 +263,72 @@
             </div>
         </section>
         <section class="section2">
-            <div>
                 <div class="box5">
                     <div class="img1"></div>
-                    <p class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi architecto nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque fugiat harum sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt cum incidunt cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta, quia perferendis rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non excepturi ex illum! Architecto iure illum esse porro repellendus voluptate voluptatum minus ea, atque, voluptas velit, nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit quia quo fuga quisquam beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati excepturi at. Dolor veritatis reprehenderit voluptate incidunt enim accusamus iste ipsum sit recusandae sequi beatae, deleniti perspiciatis dolores illum impedit, amet nobis minima laborum ex ut alias! Quisquam nulla, commodi quo cumque molestiae eum soluta esse necessitatibus eligendi officiis distinctio, unde eos omnis. Vitae deserunt quos similique velit ratione quasi dicta quam quis nobis voluptas itaque eius debitis sequi incidunt alias ullam dolor tempore expedita deleniti, delectus numquam ipsa facilis nam! Explicabo possimus ut tempora modi nostrum consectetur autem, dolorum magni? Eligendi, doloremque illum iste id voluptatem commodi cumque blanditiis molestias. Iste aliquid porro perspiciatis voluptatem eum voluptatibus quibusdam deserunt officia aperiam, ut facilis? Commodi unde facilis iste sunt expedita voluptate. Expedita ratione quibusdam nihil placeat provident molestias? Molestiae adipisci alias ratione facere voluptatum libero quidem doloremque ducimus necessitatibus perspiciatis odio quo quas, perferendis ullam error dolor asperiores laboriosam vitae deserunt unde vero voluptate? Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus recusandae explicabo quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid deleniti inventore, beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis illum voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique, odit?</p>
-                    </div>
+                    <p class="scroll">
+                        <span>DemonSlayer</span>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi
+                        architecto nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque
+                        fugiat harum sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt
+                        cum incidunt cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta,
+                        quia perferendis rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non
+                        excepturi ex illum! Architecto iure illum esse porro repellendus voluptate voluptatum minus ea,
+                        atque, voluptas velit, nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit
+                        quia quo fuga quisquam beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati
+                        excepturi at. Dolor veritatis reprehenderit voluptate incidunt enim accusamus iste ipsum sit
+                        recusandae sequi beatae, deleniti perspiciatis dolores illum impedit, amet nobis minima laborum
+                        ex ut alias! Quisquam nulla, commodi quo cumque molestiae eum soluta esse necessitatibus
+                        eligendi officiis distinctio, unde eos omnis. Vitae deserunt quos similique velit ratione quasi
+                        dicta quam quis nobis voluptas itaque eius debitis sequi incidunt alias ullam dolor tempore
+                        expedita deleniti, delectus numquam ipsa facilis nam! Explicabo possimus ut tempora modi nostrum
+                        consectetur autem, dolorum magni? Eligendi, doloremque illum iste id voluptatem commodi cumque
+                        blanditiis molestias. Iste aliquid porro perspiciatis voluptatem eum voluptatibus quibusdam
+                        deserunt officia aperiam, ut facilis? Commodi unde facilis iste sunt expedita voluptate.
+                        Expedita ratione quibusdam nihil placeat provident molestias? Molestiae adipisci alias ratione
+                        facere voluptatum libero quidem doloremque ducimus necessitatibus perspiciatis odio quo quas,
+                        perferendis ullam error dolor asperiores laboriosam vitae deserunt unde vero voluptate?
+                        Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus recusandae explicabo
+                        quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid deleniti inventore,
+                        beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis illum
+                        voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit
+                        voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique,
+                        odit?</p>
                 </div>
-            </div>
             <div class="box5">
                 <div class="img2"></div>
-                <p class="scroll">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi architecto nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque fugiat harum sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt cum incidunt cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta, quia perferendis rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non excepturi ex illum! Architecto iure illum esse porro repellendus voluptate voluptatum minus ea, atque, voluptas velit, nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit quia quo fuga quisquam beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati excepturi at. Dolor veritatis reprehenderit voluptate incidunt enim accusamus iste ipsum sit recusandae sequi beatae, deleniti perspiciatis dolores illum impedit, amet nobis minima laborum ex ut alias! Quisquam nulla, commodi quo cumque molestiae eum soluta esse necessitatibus eligendi officiis distinctio, unde eos omnis. Vitae deserunt quos similique velit ratione quasi dicta quam quis nobis voluptas itaque eius debitis sequi incidunt alias ullam dolor tempore expedita deleniti, delectus numquam ipsa facilis nam! Explicabo possimus ut tempora modi nostrum consectetur autem, dolorum magni? Eligendi, doloremque illum iste id voluptatem commodi cumque blanditiis molestias. Iste aliquid porro perspiciatis voluptatem eum voluptatibus quibusdam deserunt officia aperiam, ut facilis? Commodi unde facilis iste sunt expedita voluptate. Expedita ratione quibusdam nihil placeat provident molestias? Molestiae adipisci alias ratione facere voluptatum libero quidem doloremque ducimus necessitatibus perspiciatis odio quo quas, perferendis ullam error dolor asperiores laboriosam vitae deserunt unde vero voluptate? Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus recusandae explicabo quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid deleniti inventore, beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis illum voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique, odit?</p>
-                </div>
+                <p class="scroll"><span>Nezuko</span>
+                    <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quas nisi architecto
+                    nemo ut provident, rem quia similique nam vitae nulla sed pariatur asperiores neque fugiat harum
+                    sapiente ex sequi dignissimos recusandae ad necessitatibus dolores quasi. Deserunt cum incidunt
+                    cupiditate nobis dolor voluptatum reiciendis impedit accusantium tenetur soluta, quia perferendis
+                    rerum, dolorum, maiores corporis maxime minus exercitationem voluptate iure non excepturi ex illum!
+                    Architecto iure illum esse porro repellendus voluptate voluptatum minus ea, atque, voluptas velit,
+                    nam asperiores ad veritatis minima repellat natus. Illo ad, modi impedit quia quo fuga quisquam
+                    beatae sapiente explicabo aperiam officiis magnam voluptates obcaecati excepturi at. Dolor veritatis
+                    reprehenderit voluptate incidunt enim accusamus iste ipsum sit recusandae sequi beatae, deleniti
+                    perspiciatis dolores illum impedit, amet nobis minima laborum ex ut alias! Quisquam nulla, commodi
+                    quo cumque molestiae eum soluta esse necessitatibus eligendi officiis distinctio, unde eos omnis.
+                    Vitae deserunt quos similique velit ratione quasi dicta quam quis nobis voluptas itaque eius debitis
+                    sequi incidunt alias ullam dolor tempore expedita deleniti, delectus numquam ipsa facilis nam!
+                    Explicabo possimus ut tempora modi nostrum consectetur autem, dolorum magni? Eligendi, doloremque
+                    illum iste id voluptatem commodi cumque blanditiis molestias. Iste aliquid porro perspiciatis
+                    voluptatem eum voluptatibus quibusdam deserunt officia aperiam, ut facilis? Commodi unde facilis
+                    iste sunt expedita voluptate. Expedita ratione quibusdam nihil placeat provident molestias?
+                    Molestiae adipisci alias ratione facere voluptatum libero quidem doloremque ducimus necessitatibus
+                    perspiciatis odio quo quas, perferendis ullam error dolor asperiores laboriosam vitae deserunt unde
+                    vero voluptate? Doloribus voluptatibus excepturi voluptates blanditiis voluptas repellendus
+                    recusandae explicabo quibusdam quidem est, quo eaque? Voluptas quidem fuga sit enim, aliquid
+                    deleniti inventore, beatae dolore earum ducimus, asperiores nisi placeat libero! Officia, blanditiis
+                    illum voluptatem accusamus nemo suscipit non adipisci dolore corporis eum tenetur! Eveniet impedit
+                    voluptatum quaerat? Facilis quisquam illum ducimus eum, hic molestiae accusamus. Similique, odit?
+                </p>
             </div>
-        </div>
-            </section>
+            </div>
+            </div>
+        </section>
     </main>
 </body>
+
 </html>
